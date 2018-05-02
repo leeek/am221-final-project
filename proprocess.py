@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-def read_data(filename, size=None):
+def load_data(filename, size=None):
     if size is not None:
         df = pd.read_csv('data/' + filename, header=None, size=size)
     else:
